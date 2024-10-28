@@ -1,0 +1,82 @@
+.container{
+  margin-top: 80px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(-10%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  width: fit-content;
+  padding: 30px;
+  padding-left: 7%;
+  padding-right: 14%;
+  margin-left: 5%;
+  text-align: center;
+  color: white;
+}
+.container:hover {
+  transform: scale(1.05);
+}
+#h2{
+  margin-left: 40%;
+  font-family: cursive;
+  font-size: 10pt;
+}
+form input{
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  width: 150%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  outline: none;
+}
+form textarea{
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  width: 150%;
+  height: 10%;
+  margin-top: 10px;
+  font-family: cursive;
+  resize: none;
+  outline:none;
+}
+form textarea.ng-valid{
+  border-bottom: 5px solid greenyellow;
+}
+form textarea.ng-invalid{
+  border-bottom: 5px solid #46c9cd;
+}
+form input.ng-valid{
+  border-bottom: 5px solid greenyellow;
+}
+form input.ng-invalid{
+  border-bottom: 5px solid #46c9cd;
+}
+form button {
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 35%;
+  border-radius: 10px;
+  background-color: #007bff;
+  font-family: cursive;
+  font-size: 15px;
+}
+form button:hover{
+  background-color: white;
+  color: #007bff;
+}
+form button:disabled {
+  background-color: gray;
+}
+form label {
+  font-weight: bold;
+  font-family: cursive;
+  margin-left: -70%;
+}

@@ -1,0 +1,166 @@
+.container{
+  width: fit-content;
+  padding: 10px;
+  margin-left: 50%;
+  margin-top: -30%;
+}
+.notes {
+  width: 90%;
+}
+.notes li {
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  background:transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+.notes li:hover{
+  transform: scale(1.05);
+}
+.note {
+  width: 90%;
+  border: none;
+  background: none;
+  padding: 15px;
+  cursor: pointer;
+  font-family: cursive;
+}
+.note span{
+  color:black;
+}
+.note span:first-child{
+  color:#fff;
+}
+.note-title {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+.note-text {
+  display: block;
+  text-align: left;
+  font-size: 10pt;
+}
+.container button{
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: cursive;
+  color: white;
+  font-size: 15px;
+}
+.container button:hover{
+  background-color: white;
+  color: #007bff;
+}
+
+#h2{
+  margin-left: 40%;
+  font-family: cursive;
+}
+form input{
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  width: 120%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  outline: none;
+  font-size: 14px;
+}
+form textarea{
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  width: 120%;
+  height: 20%;
+  margin-top: 10px;
+  font-family: cursive;
+  resize: none;
+  outline:none;
+  font-size: 14px;
+}
+form textarea.ng-valid{
+  border-bottom: 5px solid greenyellow;
+}
+form textarea.ng-invalid{
+  border-bottom: 5px solid tomato;
+}
+form input.ng-valid{
+  border-bottom: 5px solid greenyellow;
+}
+form input.ng-invalid{
+  border-bottom: 5px solid tomato;
+}
+form button {
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: cursive;
+  color: white;
+  font-size: 15px;
+}
+form button:disabled {
+  background-color: gray;
+}
+form button:hover{
+  background-color: white;
+  color: #007bff;
+}
+form label {
+  font-weight: bold;
+  font-family: cursive;
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.0s ease, transform 10s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.modal-content {
+  padding: 20px;
+  background-color:black;
+  margin-top: 80px;
+  border-radius: 15px;
+  border: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 30px rgba(255,255,255,0.5);
+  width: fit-content;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+.modal-content:hover{
+  transform: scale(1.05);
+}
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}

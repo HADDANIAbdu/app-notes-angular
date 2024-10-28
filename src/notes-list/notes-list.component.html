@@ -1,0 +1,30 @@
+<div class="container">
+  <ul class="notes">
+    <li *ngFor="let note of notes">
+      <div class="note">
+        <span class="note-title">{{ note.title }}</span>
+        <span class="note-text">{{ note.text }}</span>
+        <button (click)="delete_note(note)">delete</button>
+        <button (click)="modify_note(note)">modify</button>
+      </div>
+    </li>
+  </ul>
+</div>
+<div [class.modal] ="true" [class.show]="isModaltrue" class="modal">
+  <div class="modal-content">
+      <div id="h2"><h2>Modify Note</h2></div>
+      <form [formGroup]="modifyNoteForm">
+        <div>
+          <label for="note-title">Title :</label><br>
+            <input id="note-title" formControlName="title" [(ngModel)]="title"/>
+        </div>
+        <div>
+          <label for="note-text">Text :</label><br>
+            <textarea id="note-text" formControlName="text" [(ngModel)]="text"></textarea>
+        </div>
+        <button style="margin-left: 50px;"  [disabled]="!modifyNoteForm.valid" (click)="modifyIt()">Modify Note</button>
+        <button (click)="Cancel()">Cancel</button>
+      </form>
+  </div>
+</div>
+
